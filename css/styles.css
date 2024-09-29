@@ -101,7 +101,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: static;
     width: 100%;
     bottom: 0;
 }
@@ -149,7 +149,7 @@ footer {
     align-items: center;
     max-width: 550px;
     justify-content: center;
-    padding-left: 420px;
+    padding-left: 420px; /* I cant get align-content and justify-content to work */
   }
   
   .quote-text {
@@ -167,3 +167,33 @@ footer {
     text-align: right;
   }
   
+  .cta-button {
+    background-color: #3782F5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 700px;
+  }
+  
+  .cta-text p {
+    color: white;
+  }
+  
+  .sign-up {
+    padding: 10px;
+    border-radius: 10px;
+    border: solid white;
+    background-color: transparent;
+    color: white;
+  }
+
+  .sign-up:hover {
+    background-color: #0d55c1;
+    cursor: pointer;
+  }
+
+  .section4 {
+    padding-left: 350px; /* I cant get align-content and justify-content to work */
+  }
