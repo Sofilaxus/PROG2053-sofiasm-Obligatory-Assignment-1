@@ -2,17 +2,21 @@ let postContainer = document.getElementById('postContainer');
 let page = 1;
 
 function loadPosts() {
-    fetch(`https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=3`)
+    fetch(`https://jsonplaceholder.typicode.com/posts?_page=${page}`)
         .then(response => response.json())
         .then(data => {
             data.forEach(post => {
                 let postElement = document.createElement('div');
+                postElement.classList.add('post');
                 postElement.innerHTML = `
                     <h3>${post.title}</h3>
                     <p>${post.body}</p>
                 `;
                 postContainer.appendChild(postElement);
             });
+        })
+        .catch(error => {
+            console.error(`Error fetching posts: ${error.message}`);
         });
 }
 
