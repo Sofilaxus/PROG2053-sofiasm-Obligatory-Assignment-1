@@ -17,6 +17,11 @@ header {
     padding: 10px 20px;
 }
 
+#line {
+    background-color: white;
+    padding: 1px;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -39,14 +44,57 @@ a:hover {
 }
 
 main {
-    padding: 20px;
+    display: inline;
 }
 
 main section {
     margin-bottom: 40px;
 }
 
+.section1 {
+    background-color: #1F2936;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
 
+.section1 button {
+    background-color: #3782F5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.left {
+    display: inline;
+    padding: 20px;
+    width: 450px;
+}
+
+.left h1 {
+    font-size: 34px;
+}
+
+.right {
+    display: flex;
+    padding: 20px;
+    width: 450px;
+}
+
+.section1 button:hover {
+    background-color: #084db5;
+    color: rgb(193, 199, 207);
+}
 
 footer {
     background-color: #1F2936;
@@ -57,3 +105,65 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.container h1 {
+    text-align: center;
+    color: #1F2936;
+}
+
+.content-box {
+    border: 4px solid #3782F5;
+    border-radius: 10px;
+    padding: 20px;
+    height: 150px;
+    width: 250px;
+    margin-top: 20px;
+}
+
+.information {
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.information p {
+    color: #1F2936;
+    padding: 10px;
+    width: 400px;
+    line-height: 30px;
+}
+
+.section3 {
+    background-color: #E4E5EA;
+    padding: 50px;
+}
+
+.quote-container {
+    align-items: center;
+    max-width: 550px;
+    justify-content: center;
+    padding-left: 420px;
+  }
+  
+  .quote-text {
+    color: #1F2936;
+    font-size: 24px;
+    text-shadow: 0 0 0.20rem #838383;
+    max-width: 550px;
+    font-style: italic;
+  }
+  
+  .quote-author {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+  }
+  
