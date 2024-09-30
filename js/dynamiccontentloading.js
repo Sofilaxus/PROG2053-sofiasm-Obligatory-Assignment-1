@@ -9,8 +9,8 @@ function loadPosts() {
                 let postElement = document.createElement('div');
                 postElement.classList.add('post');
                 postElement.innerHTML = `
-                    <h3>${post.title}</h3>
-                    <p>${post.body}</p>
+                    <h3 class="posttitle">${post.title}</h3>
+                    <p class="postbody">${post.body}</p>
                 `;
                 postContainer.appendChild(postElement);
             });

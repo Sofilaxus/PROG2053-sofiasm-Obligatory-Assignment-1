@@ -222,4 +222,36 @@ footer {
   .popuptext {
     color: black;
   }
-  
+
+  #postSection {
+    padding: 15px;
+  }
+
+  #postContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.post {
+    flex: 0 0 30%; 
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+    border: 10px solid #1F2936;
+    border-radius: 10px;
+    
+}
+
+.posttitle {
+    background-color: #0d55c1;
+    padding: 10px;
+    color: white;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.postbody {
+    padding: 10px;
+    max-width: 100%;
+}
