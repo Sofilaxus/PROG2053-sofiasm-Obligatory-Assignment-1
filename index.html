@@ -28,7 +28,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam voluptatibus, 
                         asperiores nisi id illo quas repellat accusantium quidem fuga totam saepe odio delectus eos 
                         dignissimos officia assumenda ducimus quisquam explicabo!</p>
-                    <button>Sign up</button>
+                    <button class="sign-up" onclick="showPopup()">Sign up</button>
                 </div>
                 <div class="right">
                     <input type="image" src="/images/imagePlaceHolder.png" alt="Submit" width="370" height="200">
@@ -71,7 +71,10 @@
                   <p>Call to action! It's time!</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
                 </div>
-                <button class="sign-up">Sign up</button>
+                <button class="sign-up" onclick="showPopup()">Sign up</button>
+                <div id="popup" class="popup">
+                    <span class="popuptext" id="popupText">Sorry! This function is not implemented... yet ;)</span>
+                </div>
               </div>
         </section>
     </main>
@@ -79,6 +82,7 @@
     <footer>
         <p>Copyright &copy;</p>
     </footer>
+    <script src="js/showPopup.js"></script>
 </body>
 
 </html>
