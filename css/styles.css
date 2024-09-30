@@ -77,7 +77,6 @@ main section {
 
 .left {
     display: inline;
-    padding: 20px;
     width: 450px;
 }
 
@@ -86,8 +85,7 @@ main section {
 }
 
 .right {
-    display: flex;
-    padding: 20px;
+    padding: 30px;
     width: 450px;
 }
 
