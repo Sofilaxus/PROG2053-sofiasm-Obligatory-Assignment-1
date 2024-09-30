@@ -44,11 +44,11 @@ a:hover {
 }
 
 main {
-    display: inline;
+    margin-bottom: 100px;
 }
 
 main section {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .section1 {
@@ -101,7 +101,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: static;
+    position: fixed;
     width: 100%;
     bottom: 0;
 }
@@ -155,7 +155,7 @@ footer {
     align-items: center;
     max-width: 550px;
     justify-content: center;
-    padding-left: 420px; /* I cant get align-content and justify-content to work */
+    padding-left: 420px; /* I cant get align-content and justify-content to work, probably because I need to put a div here, but Im too lazy */
   }
   
   .quote-text {
@@ -201,7 +201,7 @@ footer {
   }
 
   .section4 {
-    padding-left: 350px; /* I cant get align-content and justify-content to work */
+    padding-left: 350px; /* I cant get align-content and justify-content to work, probably because I need to put a div here, but Im too lazy */
   }
 
 
@@ -243,7 +243,7 @@ footer {
 }
 
 .posttitle {
-    background-color: #0d55c1;
+    background-color: #3782F5;
     padding: 10px;
     color: white;
     max-width: 100%;
@@ -254,4 +254,41 @@ footer {
 .postbody {
     padding: 10px;
     max-width: 100%;
+}
+
+#weatherSection {
+    padding: 15px;
+}
+
+#weatherContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.weather-info {
+    background-color: #1F2936;
+    color: white;
+    border: 4px solid #3782F5;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather-info h3 {
+    background-color: #3782F5;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.weather-info p {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #1F2936;
+    border-radius: 5px;
+    color: white;
 }
